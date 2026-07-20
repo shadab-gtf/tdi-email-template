@@ -1,98 +1,84 @@
 <!doctype html>
 <html>
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>TDI Emailer</title>
 
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Alice&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&display=swap"
-      rel="stylesheet"
-    />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TDI Emailer</title>
 
-    <style>
-      /* Typography Overrides */
-      body,
-      table,
-      td,
-      p,
-      a,
-      div,
-      li {
-        font-family: "Poppins", Helvetica, Arial, sans-serif !important;
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Alice&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&display=swap"
+    rel="stylesheet" />
+  <style>
+    /* Typography Overrides */
+    body,
+    table,
+    td,
+    p,
+    a,
+    div,
+    li {
+      font-family: "Poppins", Helvetica, Arial, sans-serif !important;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    .heading {
+      font-family:
+        "Alice", "Source Serif 4", Helvetica, Arial, sans-serif !important;
+    }
+
+    @media (max-width: 768px) {
+      table.container {
+        width: 100% !important;
+        max-width: 100% !important;
       }
-      h1,
-      h2,
-      h3,
-      h4,
-      h5,
-      h6,
-      .heading {
-        font-family:
-          "Alice", "Source Serif 4", Helvetica, Arial, sans-serif !important;
+
+      .mobile-padding {
+        padding: 20px !important;
       }
 
-      @media only screen and (max-width: 768px) {
-        table.container {
-          width: 100% !important;
-          max-width: 100% !important;
-        }
-
-        .mobile-padding {
-          padding: 20px !important;
-        }
-
-        .stack-column {
-          display: block !important;
-          width: 100% !important;
-        }
-
-        td.stack-column {
-          display: block !important;
-          width: 100% !important;
-        }
-
-        td.stack-column img {
-          margin-bottom: 16px !important;
-        }
-
-        .hide-mobile {
-          display: none !important;
-          width: 0 !important;
-          height: 0 !important;
-          padding: 0 !important;
-          margin: 0 !important;
-        }
+      .stack-column {
+        display: block !important;
+        width: 100% !important;
       }
-    </style>
-  </head>
 
-  <body style="margin: 0; padding: 0; background-color: #e6e6e6">
-    <!-- OUTER WRAPPER -->
-    <table
-      width="100%"
-      border="0"
-      cellspacing="0"
-      cellpadding="0"
-      bgcolor="#e6e6e6"
-    >
-      <tr>
-        <td align="center">
-          <!-- MAIN CONTAINER -->
-          <table
-            border="0"
-            cellspacing="0"
-            cellpadding="0"
-            class="container"
-            align="center"
-            style="width: 640px; max-width: 640px"
-          >
-            <!-- TOP BLUE HEADER SECTION -->
-            <tr>
-              <td
-                style="
+      td.stack-column {
+        display: block !important;
+        width: 100% !important;
+      }
+
+      td.stack-column img {
+        margin-bottom: 16px !important;
+      }
+
+      .hide-mobile {
+        display: none !important;
+        width: 0 !important;
+        height: 0 !important;
+        padding: 0 !important;
+        margin: 0 !important;
+      }
+    }
+  </style>
+</head>
+
+<body style="margin: 0; padding: 0; background-color: #e6e6e6">
+  <!-- OUTER WRAPPER -->
+  <table width="100%" border="0" cellspacing="0" cellpadding="0" bgcolor="#e6e6e6">
+    <tr>
+      <td align="center">
+        <!-- MAIN CONTAINER -->
+        <table border="0" cellspacing="0" cellpadding="0" class="container" align="center" width="640">
+          <!-- TOP BLUE HEADER SECTION -->
+          <tr>
+            <td style="
                   background-color: #0c2f57;
                   background-image:
                     linear-gradient(
@@ -102,69 +88,45 @@
                     url(&quot;./hero-bg.png&quot;);
                   background-size: cover;
                   background-position: center bottom;
-                "
-              >
-                <!-- Header -->
-                <table width="100%" border="0" cellspacing="0" cellpadding="0">
-                  <tr>
-                    <td align="left" style="padding: 25px 0 25px 40px">
-                      <img
-                        src="./top-logo.png"
-                        width="58"
-                        style="display: block; border: 0"
-                      />
-                    </td>
-                    <td
-                      align="right"
-                      class="mobile-center"
-                      style="padding: 25px 40px 25px 0"
-                    >
-                      <table
-                        border="0"
-                        cellspacing="0"
-                        cellpadding="0"
-                        align="right"
-                        style="background-color: #081d36; border-radius: 30px"
-                      >
-                        <tr>
-                          <td style="padding: 10px 30px">
-                            <a
-                              href="https://gtftech.co.in/tdi-city/emailer2/images/tdi-brochuere.pdf"
-                              download=""
-                              style="
+                ">
+              <!-- Header -->
+              <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                <tr>
+                  <td align="left" style="padding: 25px 0 25px 40px">
+                    <img src="./top-logo.png" width="58" style="display: block; border: 0" />
+                  </td>
+                  <td align="right" class="mobile-center" style="padding: 25px 40px 25px 0">
+                    <table border="0" cellspacing="0" cellpadding="0" align="right"
+                      style="background-color: #081d36; border-radius: 30px">
+                      <tr>
+                        <td style="padding: 10px 30px">
+                          <a href="https://gtftech.co.in/tdi-city/emailer2/images/tdi-brochuere.pdf" download="" style="
                                 font-family: Arial, sans-serif;
                                 font-size: 10px;
                                 color: #ffffff;
                                 text-decoration: none;
                                 font-weight: 400;
                                 letter-spacing: 0.5px;
-                              "
-                            >
-                              DOWNLOAD BROCHURE &nbsp;
-                              <img
-                                src="https://gtftech.co.in/tdi-city/emailer2/images/download-icon.png"
-                                width="12"
-                                style="
+                              ">
+                            DOWNLOAD BROCHURE &nbsp;<img
+                              src="https://gtftech.co.in/tdi-city/emailer2/images/download-icon.png" width="12" style="
                                   vertical-align: middle;
                                   border: 0;
                                   padding-bottom: 2px;
-                                "
-                              />
-                            </a>
-                          </td>
-                        </tr>
-                      </table>
-                    </td>
-                  </tr>
-                </table>
-              </td>
-            </tr>
+                                " />
+                          </a>
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
 
-            <!-- HERO IMAGE SECTION -->
-            <tr>
-              <td
-                bgcolor="#f9f9f9"
-                style="
+          <!-- HERO IMAGE SECTION -->
+          <tr>
+            <td bgcolor="#f9f9f9" style="
                   padding: 0;
                   background-image:
                     linear-gradient(
@@ -175,78 +137,59 @@
                   background-size: 100% 140px;
                   background-repeat: no-repeat;
                   background-position: center top;
-                "
-              >
-                <!-- Hero Image -->
-                <table width="100%" border="0" cellspacing="0" cellpadding="0">
-                  <tr>
-                    <td align="center" style="padding-bottom: 0">
-                      <img
-                        src="./hero.png"
-                        width="574"
-                        style="
+                ">
+              <!-- Hero Image -->
+              <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                <tr>
+                  <td align="center" style="padding-bottom: 0">
+                    <img src="./hero.png" width="574" style="
                           width: 574px;
                           max-width: 100%;
                           height: auto;
                           display: block;
                           border: 0;
                           border-radius: 20px;
-                        "
-                      />
-                    </td>
-                  </tr>
-                </table>
-              </td>
-            </tr>
+                        " />
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
 
-            <!-- LINE -->
-            <tr>
-              <td bgcolor="#f9f9f9" align="center" style="padding: 0 22px">
-                <img
-                  src="./line.png"
-                  width="640"
-                  style="
+          <!-- LINE -->
+          <tr>
+            <td bgcolor="#f9f9f9" align="center" style="padding: 0 22px">
+              <img src="./line.png" width="640" style="
                     width: 100%;
                     max-width: 640px;
                     height: auto;
                     display: block;
                     border: 0;
-                  "
-                />
-              </td>
-            </tr>
+                  " />
+            </td>
+          </tr>
 
-            <!-- TAGLINE -->
-            <tr>
-              <td
-                bgcolor="#f9f9f9"
-                align="center"
-                style="padding: 10px 30px 40px 30px"
-              >
-                <h1
-                  style="
+          <!-- TAGLINE -->
+          <tr>
+            <td bgcolor="#f9f9f9" align="center" style="padding: 10px 30px 40px 30px">
+              <h1 style="
                     margin: 0;
                     font-family: Georgia, serif;
                     font-weight: 400;
                     font-size: 24.11px;
                     color: #313131;
-                  "
-                >
-                  Region’s
-                  <span
-                    style="color: #0c2f57; font-weight: 400; font-size: 30px"
-                    >Leading</span
-                  >
-                  Real Estate Developer
-                </h1>
-              </td>
-            </tr>
+                  ">
+                Region’s
+                <span style="color: #0c2f57; font-weight: 400; font-size: 30px">Leading</span>
+                Real Estate Developer
+              </h1>
+            </td>
+          </tr>
 
-            <!-- DARK BLUE DESCRIPTION BLOCK -->
-            <tr>
-              <td style="background-color: #0b2b4f; padding: 20px 20px">
-                <p
-                  style="
+          <!-- DARK BLUE DESCRIPTION BLOCK -->
+          <tr>
+            <td style="background-color: #0b2b4f; padding: 20px 20px">
+              <p style="
                     margin: 0;
                     font-family:
                       &quot;Poppins&quot;, &quot;Arial&quot;, sans-serif;
@@ -256,40 +199,26 @@
                     text-align: center;
                     font-style: italic;
                     letter-spacing: 0.5px;
-                  "
-                >
-                  For over three decades, TDI Infratech has shaped integrated
-                  townships and landmark commercial destinations across North
-                  India developments defined by planning depth, execution
-                  discipline and long-term value creation.
-                </p>
-              </td>
-            </tr>
-          </table>
+                  ">
+                For over three decades, TDI Infratech has shaped integrated
+                townships and landmark commercial destinations across North
+                India developments defined by planning depth, execution
+                discipline and long-term value creation.
+              </p>
+            </td>
+          </tr>
+        </table>
 
-          <!-- Chairman section -->
-          <table
-            width="100%"
-            border="0"
-            cellspacing="0"
-            cellpadding="0"
-            class="container"
-            align="center"
-            style="width: 640px; max-width: 640px; background-color: #f9f9f9"
-          >
-            <tr>
-              <td style="padding: 40px 20px" class="mobile-padding">
-                <table width="100%" border="0" cellspacing="0" cellpadding="0">
-                  <tr>
-                    <!-- LEFT CONTENT -->
-                    <td
-                      width="282"
-                      valign="middle"
-                      class="stack-column mobile-center"
-                      align="left"
-                    >
-                      <h2
-                        style="
+        <!-- Chairman section -->
+        <table width="100%" border="0" cellspacing="0" cellpadding="0" class="container" align="center"
+          style="width: 640px; max-width: 640px; background-color: #f9f9f9">
+          <tr>
+            <td style="padding: 40px 20px" class="mobile-padding">
+              <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                <tr>
+                  <!-- LEFT CONTENT -->
+                  <td width="282" valign="middle" class="stack-column mobile-center" align="left">
+                    <h2 style="
                           margin: 0 0 6px 20px;
                           font-family:
                             &quot;Poppins&quot;, Helvetica, Arial, sans-serif !important;
@@ -298,24 +227,20 @@
                           line-height: 20px;
                           letter-spacing: 0.5px;
                           color: #000000;
-                        "
-                      >
-                        MR. RAVINDER TANEJA
-                      </h2>
-                      <p
-                        style="
+                        ">
+                      MR. RAVINDER TANEJA
+                    </h2>
+                    <p style="
                           margin: 0 0 30px 20px;
                           font-family:
                             &quot;Poppins&quot;, Helvetica, Arial, sans-serif;
                           font-size: 13px;
                           line-height: 18px;
                           color: #333333;
-                        "
-                      >
-                        Chairman, TDI Infratech Ltd
-                      </p>
-                      <p
-                        style="
+                        ">
+                      Chairman, TDI Infratech Ltd
+                    </p>
+                    <p style="
                           margin: 0 0 6px 20px;
                           font-family:
                             &quot;Poppins&quot;, Helvetica, Arial, sans-serif;
@@ -323,33 +248,19 @@
                           line-height: 18px;
                           letter-spacing: 0.5px;
                           color: #333333;
-                        "
-                      >
-                        Visionary leader whose strategic foresight has shaped
-                        the organisation’s scale, credibility, and long-term
-                        legacy in North India’s real estate landscape.
-                      </p>
-                    </td>
-                    <!-- GAP -->
-                    <td
-                      width="20"
-                      class="hide-mobile"
-                      style="font-size: 0; line-height: 0"
-                    >
-                      &nbsp;
-                    </td>
-                    <!-- RIGHT IMAGE -->
-                    <td
-                      width="200"
-                      valign="middle"
-                      class="stack-column"
-                      align="center"
-                    >
-                      <img
-                        src="./ravindar.png"
-                        width="200"
-                        height="262"
-                        style="
+                        ">
+                      Visionary leader whose strategic foresight has shaped
+                      the organisation’s scale, credibility, and long-term
+                      legacy in North India’s real estate landscape.
+                    </p>
+                  </td>
+                  <!-- GAP -->
+                  <td width="20" class="hide-mobile" style="font-size: 0; line-height: 0">
+                    &nbsp;
+                  </td>
+                  <!-- RIGHT IMAGE -->
+                  <td width="200" valign="middle" class="stack-column" align="center">
+                    <img src="./ravindar.png" width="200" height="262" style="
                           width: 100%;
                           max-width: 200px;
                           height: 262px;
@@ -357,54 +268,34 @@
                           display: block;
                           border: 0;
                           border-radius: 20px;
-                        "
-                      />
-                    </td>
-                  </tr>
-                </table>
-              </td>
-            </tr>
+                        " />
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
 
-            <!-- Bottom Divider -->
-            <tr>
-              <td>
-                <table
-                  width="90%"
-                  align="center"
-                  border="0"
-                  cellspacing="0"
-                  cellpadding="0"
-                >
-                  <tr>
-                    <td
-                      height="1"
-                      bgcolor="#e0e0e0"
-                      style="font-size: 0; line-height: 0"
-                    >
-                      &nbsp;
-                    </td>
-                  </tr>
-                </table>
-              </td>
-            </tr>
+          <!-- Bottom Divider -->
+          <tr>
+            <td>
+              <table width="90%" align="center" border="0" cellspacing="0" cellpadding="0">
+                <tr>
+                  <td height="1" bgcolor="#e0e0e0" style="font-size: 0; line-height: 0">
+                    &nbsp;
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
 
-            <!-- managing director section -->
-            <tr>
-              <td style="padding: 40px 20px" class="mobile-padding">
-                <table width="100%" border="0" cellspacing="0" cellpadding="0">
-                  <tr>
-                    <!-- Left Image -->
-                    <td
-                      width="200"
-                      valign="middle"
-                      class="stack-column"
-                      align="center"
-                    >
-                      <img
-                        src="./akshay.png"
-                        width="200"
-                        height="262"
-                        style="
+          <!-- managing director section -->
+          <tr>
+            <td style="padding: 40px 20px" class="mobile-padding">
+              <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                <tr>
+                  <!-- Left Image -->
+                  <td width="200" valign="middle" class="stack-column" align="center">
+                    <img src="./akshay.png" width="200" height="262" style="
                           width: 100%;
                           max-width: 200px;
                           height: 262px;
@@ -412,26 +303,15 @@
                           display: block;
                           border: 0;
                           border-radius: 20px;
-                        "
-                      />
-                    </td>
-                    <!-- GAP -->
-                    <td
-                      width="30"
-                      class="hide-mobile"
-                      style="font-size: 0; line-height: 0"
-                    >
-                      &nbsp;
-                    </td>
-                    <!-- Right CONTENT -->
-                    <td
-                      width="325"
-                      valign="middle"
-                      class="stack-column mobile-center"
-                      align="left"
-                    >
-                      <h2
-                        style="
+                        " />
+                  </td>
+                  <!-- GAP -->
+                  <td width="30" class="hide-mobile" style="font-size: 0; line-height: 0">
+                    &nbsp;
+                  </td>
+                  <!-- Right CONTENT -->
+                  <td width="325" valign="middle" class="stack-column mobile-center" align="left">
+                    <h2 style="
                           margin: 0 20px 6px 0px;
                           font-family:
                             &quot;Poppins&quot;, Helvetica, Arial, sans-serif !important;
@@ -440,24 +320,20 @@
                           line-height: 20px;
                           letter-spacing: 0.5px;
                           color: #000000;
-                        "
-                      >
-                        MR. AKSHAY TANEJA
-                      </h2>
-                      <p
-                        style="
+                        ">
+                      MR. AKSHAY TANEJA
+                    </h2>
+                    <p style="
                           margin: 0 0 30px 0;
                           font-family:
                             &quot;Poppins&quot;, Helvetica, Arial, sans-serif;
                           font-size: 13px;
                           line-height: 18px;
                           color: #333333;
-                        "
-                      >
-                        Managing Director, TDI Infratech Ltd
-                      </p>
-                      <p
-                        style="
+                        ">
+                      Managing Director, TDI Infratech Ltd
+                    </p>
+                    <p style="
                           margin: 0 0px 0px 0;
                           font-family:
                             &quot;Poppins&quot;, Helvetica, Arial, sans-serif;
@@ -465,40 +341,27 @@
                           line-height: 18px;
                           letter-spacing: 0.5px;
                           color: #333333;
-                        "
-                      >
-                        A Dynamic leader who drives structured growth and
-                        operational excellence, steering the company with a
-                        progressive vision and a sharp focus on future-ready
-                        expansion.
-                      </p>
-                    </td>
-                  </tr>
-                </table>
-              </td>
-            </tr>
-          </table>
+                        ">
+                      A Dynamic leader who drives structured growth and
+                      operational excellence, steering the company with a
+                      progressive vision and a sharp focus on future-ready
+                      expansion.
+                    </p>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+        </table>
 
-          <!-- Strategic presence section -->
+        <!-- Strategic presence section -->
 
-          <table
-            width="100%"
-            border="0"
-            cellspacing="0"
-            cellpadding="0"
-            class="container"
-            align="center"
-            style="width: 640px; max-width: 640px; background-color: #ffffff"
-          >
-            <!-- Heading -->
-            <tr>
-              <td
-                align="center"
-                style="padding: 25px 20px 25px 20px"
-                class="mobile-padding"
-              >
-                <h2
-                  style="
+        <table width="100%" border="0" cellspacing="0" cellpadding="0" class="container" align="center"
+          style="width: 640px; max-width: 640px; background-color: #ffffff">
+          <!-- Heading -->
+          <tr>
+            <td align="center" style="padding: 25px 20px 25px 20px" class="mobile-padding">
+              <h2 style="
                     margin: 0;
                     font-family:
                       &quot;Alice&quot;, &quot;Source Serif 4&quot;, serif;
@@ -506,114 +369,86 @@
                     font-weight: 400;
                     color: #1a1a1a;
                     letter-spacing: 0.5px;
-                  "
-                >
-                  Strategic Presence
-                </h2>
-              </td>
-            </tr>
+                  ">
+                Strategic Presence
+              </h2>
+            </td>
+          </tr>
 
-            <!-- Cities Row -->
-            <tr>
-              <td align="center" style="padding: 0 0px 35px 0px">
-                <p
-                  style="
+          <!-- Cities Row -->
+          <tr>
+            <td align="center" style="padding: 0 0px 35px 0px">
+              <p style="
                     margin: 0 10px;
                     font-family: Poppins, Helvetica, Arial, sans-serif;
                     font-size: 10px;
                     color: #1a1a1a;
                     font-weight: 500;
                     letter-spacing: 0.5px;
-                  "
-                >
-                  MOHALI &nbsp; &nbsp;|&nbsp; &nbsp; CHANDIGARH &nbsp; &nbsp;|
-                  &nbsp; &nbsp; RAJPURA &nbsp; &nbsp;|&nbsp; &nbsp; PANIPAT
-                  &nbsp; &nbsp;|&nbsp; &nbsp; KUNDLI &nbsp; &nbsp;|&nbsp; &nbsp;
-                  DELHI &nbsp; &nbsp;|&nbsp; &nbsp; LUDHIANA &nbsp;
-                  &nbsp;|&nbsp; &nbsp; GURGAON
-                </p>
-              </td>
-            </tr>
+                  ">
+                MOHALI &nbsp; &nbsp;|&nbsp; &nbsp;CHANDIGARH &nbsp; &nbsp;|
+                &nbsp; &nbsp;RAJPURA &nbsp; &nbsp;|&nbsp; &nbsp;PANIPAT &nbsp;
+                &nbsp;|&nbsp; &nbsp;KUNDLI &nbsp; &nbsp;|&nbsp; &nbsp; DELHI
+                &nbsp; &nbsp;|&nbsp; &nbsp;LUDHIANA &nbsp; &nbsp;|&nbsp;
+                &nbsp;GURGAON
+              </p>
+            </td>
+          </tr>
 
-            <!-- Blue Highlight Bar -->
-            <tr>
-              <td bgcolor="#143a63" align="center" style="padding: 13px 10px">
-                <table width="100%" border="0" cellspacing="0" cellpadding="0">
-                  <tr>
-                    <td
-                      width="5%"
-                      align="center"
-                      style="font-size: 0; line-height: 0"
-                    >
-                      <div
-                        style="
+          <!-- Blue Highlight Bar -->
+          <tr>
+            <td bgcolor="#143a63" align="center" style="padding: 13px 10px">
+              <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                <tr>
+                  <td width="5%" align="center" style="font-size: 0; line-height: 0">
+                    <div style="
                           height: 1px;
                           background-color: #ffffff;
                           width: 30px;
-                        "
-                      ></div>
-                    </td>
+                        "></div>
+                  </td>
 
-                    <td width="90%" align="center">
-                      <p
-                        style="
+                  <td width="90%" align="center">
+                    <p style="
                           margin: 0;
                           font-family: Poppins, Helvetica, Arial, sans-serif;
                           font-size: 12px;
                           letter-spacing: 0.5px;
                           color: #ffffff;
-                        "
-                      >
-                        Positioned across established urban centres and emerging
-                        high-growth corridors.
-                      </p>
-                    </td>
+                        ">
+                      Positioned across established urban centres and emerging
+                      high-growth corridors.
+                    </p>
+                  </td>
 
-                    <td
-                      width="5%"
-                      align="center"
-                      style="font-size: 0; line-height: 0"
-                    >
-                      <div
-                        style="
+                  <td width="5%" align="center" style="font-size: 0; line-height: 0">
+                    <div style="
                           height: 1px;
                           background-color: #ffffff;
                           width: 30px;
-                        "
-                      ></div>
-                    </td>
-                  </tr>
-                </table>
-              </td>
-            </tr>
+                        "></div>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
 
-            <!-- PROJECT CARD 1: TDI SMART CITY, MOHALI (text left / video right) -->
-            <tr>
-              <td style="padding: 40px 30px 20px 30px" class="mobile-padding">
-                <table width="100%" border="0" cellspacing="0" cellpadding="0">
-                  <tr>
-                    <!-- LEFT: logo + copy -->
-                    <td
-                      width="207"
-                      valign="middle"
-                      align="center"
-                      class="stack-column"
-                      style="padding-right: 40px"
-                    >
-                      <img
-                        src="./tdi-smart-city-logo.png"
-                        width="150"
-                        style="
+          <!--TDI SMART CITY, MOHALI-->
+          <tr>
+            <td style="padding: 40px 30px 20px 30px" class="mobile-padding">
+              <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                <tr>
+                  <!-- LEFT:logo + copy -->
+                  <td width="207" valign="middle" align="center" class="stack-column" style="padding-right: 40px">
+                    <img src="./tdi-smart-city-logo.png" width="150" style="
                           width: 100%;
                           max-width: 150px;
                           height: auto;
                           display: block;
                           border: 0;
                           margin: 0 0 15px 0;
-                        "
-                      />
-                      <h3
-                        style="
+                        " />
+                    <h3 style="
                           margin: 0 0 10px 0;
                           font-family:
                             &quot;Poppins&quot;, Helvetica, Arial, sans-serif !important;
@@ -621,41 +456,30 @@
                           font-weight: 600;
                           letter-spacing: 0.5px;
                           color: #0c2f57;
-                        "
-                      >
-                        TDI SMART CITY
-                      </h3>
-                      <p
-                        style="
+                        ">
+                      TDI SMART CITY
+                    </h3>
+                    <p style="
                           margin: 0;
                           font-family:
                             &quot;Poppins&quot;, Helvetica, Arial, sans-serif;
                           font-size: 12px;
                           color: #555555;
                           font-weight: 500;
-                        "
-                      >
-                        Mohali &bull; 350+ Acres
-                      </p>
-                    </td>
-                    <!-- RIGHT: video thumbnail + caption bar -->
-                    <td width="333" valign="middle" class="stack-column">
-                      <a
-                        href="https://youtu.be/soL_u-8nhWQ?si=l2q0MzLcJSzH9mcv"
-                        target="_blank"
-                        style="
+                        ">
+                      Mohali &bull;350+ Acres
+                    </p>
+                  </td>
+                  <!-- RIGHT:video thumbnail + caption bar -->
+                  <td width="333" valign="middle" class="stack-column">
+                    <a href="https://youtu.be/soL_u-8nhWQ?si=l2q0MzLcJSzH9mcv" target="_blank" style="
                           text-decoration: none;
                           display: block;
                           position: relative;
                           line-height: 0;
                           font-size: 0;
-                        "
-                      >
-                        <img
-                          src="./tdi-smart-city.png"
-                          width="333"
-                          height="145"
-                          style="
+                        ">
+                      <img src="./tdi-smart-city.png" width="333" height="145" style="
                             width: 100%;
                             max-width: 333px;
                             height: 145px;
@@ -664,26 +488,15 @@
                             border: 0;
                             border-top-left-radius: 15px;
                             border-top-right-radius: 15px;
-                          "
-                        />
-                      </a>
-                      <table
-                        width="100%"
-                        border="0"
-                        cellspacing="0"
-                        cellpadding="0"
-                        bgcolor="#143a63"
-                        style="
+                          " />
+                    </a>
+                    <table width="100%" border="0" cellspacing="0" cellpadding="0" bgcolor="#143a63" style="
                           border-bottom-right-radius: 15px;
                           border-bottom-left-radius: 15px;
-                        "
-                      >
-                        <tr>
-                          <td align="center" style="padding: 12px 15px">
-                            <a
-                              href="https://youtu.be/soL_u-8nhWQ?si=l2q0MzLcJSzH9mcv"
-                              target="_blank"
-                              style="
+                        ">
+                      <tr>
+                        <td align="center" style="padding: 12px 15px">
+                          <a href="https://youtu.be/soL_u-8nhWQ?si=l2q0MzLcJSzH9mcv" target="_blank" style="
                                 font-family:
                                   &quot;Poppins&quot;, Helvetica, Arial,
                                   sans-serif;
@@ -692,53 +505,38 @@
                                 text-decoration: none;
                                 font-weight: 400;
                                 letter-spacing: 0.5px;
-                              "
-                            >
-                              TDI Smart City Mohali — Your Ideal Destination
-                              <img
-                                src="./arrow.png"
-                                width="14"
-                                style="
+                              ">
+                            TDI Smart City Mohali — Your Ideal Destination
+                            <img src="./arrow.png" width="14" style="
                                   vertical-align: middle;
                                   margin-left: 6px;
                                   margin-bottom: 2px;
                                   border: 0;
-                                "
-                                alt="arrow"
-                              />
-                            </a>
-                          </td>
-                        </tr>
-                      </table>
-                    </td>
-                  </tr>
-                </table>
-              </td>
-            </tr>
-
-            <!-- PROJECT CARD 2: TDI CITY, KUNDLI (video left / text right) -->
-            <tr>
-              <td style="padding: 20px 30px 40px 30px" class="mobile-padding">
-                <table width="100%" border="0" cellspacing="0" cellpadding="0">
-                  <tr>
-                    <!-- LEFT: video thumbnail + caption bar -->
-                    <td width="333" valign="middle" class="stack-column">
-                      <a
-                        href="https://youtu.be/kWOD9_4clo0"
-                        target="_blank"
-                        style="
+                                " alt="arrow" />
+                          </a>
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <!-- TDI CITY, KUNDLI -->
+          <tr>
+            <td style="padding: 20px 30px 40px 30px" class="mobile-padding">
+              <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                <tr>
+                  <!-- LEFT:video thumbnail + caption bar -->
+                  <td width="333" valign="middle" class="stack-column">
+                    <a href="https://youtu.be/kWOD9_4clo0" target="_blank" style="
                           text-decoration: none;
                           display: block;
                           position: relative;
                           line-height: 0;
                           font-size: 0;
-                        "
-                      >
-                        <img
-                          src="./tdi-city-kundli.png"
-                          width="333"
-                          height="145"
-                          style="
+                        ">
+                      <img src="./tdi-city-kundli.png" width="333" height="145" style="
                             width: 100%;
                             max-width: 333px;
                             height: 145px;
@@ -747,26 +545,15 @@
                             border: 0;
                             border-top-left-radius: 15px;
                             border-top-right-radius: 15px;
-                          "
-                        />
-                      </a>
-                      <table
-                        width="100%"
-                        border="0"
-                        cellspacing="0"
-                        cellpadding="0"
-                        bgcolor="#143a63"
-                        style="
+                          " />
+                    </a>
+                    <table width="100%" border="0" cellspacing="0" cellpadding="0" bgcolor="#143a63" style="
                           border-bottom-right-radius: 15px;
                           border-bottom-left-radius: 15px;
-                        "
-                      >
-                        <tr>
-                          <td align="center" style="padding: 12px 15px">
-                            <a
-                              href="https://youtu.be/kWOD9_4clo0"
-                              target="_blank"
-                              style="
+                        ">
+                      <tr>
+                        <td align="center" style="padding: 12px 15px">
+                          <a href="https://youtu.be/kWOD9_4clo0" target="_blank" style="
                                 font-family:
                                   &quot;Poppins&quot;, Helvetica, Arial,
                                   sans-serif;
@@ -775,118 +562,255 @@
                                 text-decoration: none;
                                 font-weight: 400;
                                 letter-spacing: 0.5px;
-                              "
-                            >
-                              TDI City Kundli — Your Ideal Destination
-                              <img
-                                src="./arrow.png"
-                                width="14"
-                                style="
+                              ">
+                            TDI City Kundli — Your Ideal Destination
+                            <img src="./arrow.png" width="14" style="
                                   vertical-align: middle;
                                   margin-left: 6px;
                                   margin-bottom: 2px;
                                   border: 0;
-                                "
-                                alt="arrow"
-                              />
-                            </a>
-                          </td>
-                        </tr>
-                      </table>
-                    </td>
-                    <!-- RIGHT: logo + copy -->
-                    <td
-                      width="167"
-                      valign="middle"
-                      align="left"
-                      class="stack-column"
-                      style="padding-left: 80px"
-                    >
-                      <img
-                        src="./tdi-city.png"
-                        width="70"
-                        style="
+                                " alt="arrow" />
+                          </a>
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                  <!-- RIGHT:logo + copy -->
+                  <td width="167" valign="middle" align="left" class="stack-column" style="padding-left: 80px">
+                    <img src="./tdi-city.png" width="70" style="
                           width: 100%;
                           max-width: 70px;
                           height: auto;
                           display: block;
                           border: 0;
                           margin: 0 0 15px 22px;
-                        "
-                      />
-                      <h3
-                        style="
+                        " />
+                    <h3 style="
                           margin: 0 0 10px 22px;
                           font-family:
                             &quot;Poppins&quot;, Helvetica, Arial, sans-serif !important;
                           font-size: 15px;
                           font-weight: 600;
-                           align-items: center;
+                          align-items: center;
                           letter-spacing: 0.5px;
                           color: #143a63;
-                        "
-                      >
-                        TDI CITY
-                      </h3>
-                      <p
-                        style="
-                          margin:0;
+                        ">
+                      TDI CITY
+                    </h3>
+                    <p style="
+                          margin: 0;
                           font-family:
                             &quot;Poppins&quot;, Helvetica, Arial, sans-serif;
                           font-size: 12px;
                           color: #555555;
                           font-weight: 500;
-                        "
-                      >
-                        Kundli &bull; 1100+ Acres
-                      </p>
-                    </td>
-                  </tr>
-                </table>
-              </td>
-            </tr>
-
-            <!-- ROW: CONNAUGHT ESTATE LUDHIANA | CONNAUGHT ESTATE PANIPAT -->
-            <tr>
-              <td style="padding: 20px 40px 20px 40px" class="mobile-padding">
-                <table width="100%" border="0" cellspacing="0" cellpadding="0">
-                  <tr>
-                    <td
-                      width="48%"
-                      valign="top"
-                      align="center"
-                      class="stack-column"
-                    >
-                      <table
-                        width="100%"
-                        border="0"
-                        cellspacing="0"
-                        cellpadding="0"
-                      >
-                        <tr>
-                          <td
-                            height="120"
-                            valign="bottom"
-                            align="center"
-                            style="padding-bottom: 15px"
-                          >
-                            <img
-                              src="./cel.png"
-                              width="140"
-                              style="
+                        ">
+                      Kundli &bull;1100+ Acres
+                    </p>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <!-- ROW:CONNAUGHT ESTATE LUDHIANA | CONNAUGHT ESTATE LUDHIANA -->
+          <tr>
+            <td style="padding: 40px 30px 20px 30px" class="mobile-padding">
+              <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                <tr>
+                  <!-- LEFT:logo + copy -->
+                  <td width="207" valign="middle" align="center" class="stack-column" style="padding-right: 40px">
+                    <img src="./cel.png" width="150" style="
+                          width: 100%;
+                          max-width: 150px;
+                          height: auto;
+                          display: block;
+                          border: 0;
+                          margin: 0 0 15px 0;
+                        " />
+                    <h3 style="
+                          margin: 0 0 10px 0;
+                          font-family:
+                            &quot;Poppins&quot;, Helvetica, Arial, sans-serif !important;
+                          font-size: 16px;
+                          font-weight: 600;
+                          letter-spacing: 0.5px;
+                          color: #0c2f57;
+                        ">
+                      CONNAUGHT ESTATE
+                    </h3>
+                    <p style="
+                          margin: 0;
+                          font-family:
+                            &quot;Poppins&quot;, Helvetica, Arial, sans-serif;
+                          font-size: 12px;
+                          color: #555555;
+                          font-weight: 500;
+                        ">
+                      Ludhiana &bull;150+ Acres
+                    </p>
+                  </td>
+                  <!-- RIGHT:video thumbnail + caption bar -->
+                  <td width="333" valign="middle" class="stack-column">
+                    <a href="https://www.instagram.com/reel/DZ6saZ4v5sN/?igsh=Mnl3M2lxamE1NXd3" target="_blank" style="
+                          text-decoration: none;
+                          display: block;
+                          position: relative;
+                          line-height: 0;
+                          font-size: 0;
+                        ">
+                      <img src="./ludhiana.png " width="333" height="145" style="
+                            width: 100%;
+                            max-width: 333px;
+                            height: 145px;
+                            object-fit: cover;
+                            display: block;
+                            border: 0;
+                            border-top-left-radius: 15px;
+                            border-top-right-radius: 15px;
+                          " />
+                    </a>
+                    <table width="100%" border="0" cellspacing="0" cellpadding="0" bgcolor="#143a63" style="
+                          border-bottom-right-radius: 15px;
+                          border-bottom-left-radius: 15px;
+                        ">
+                      <tr>
+                        <td align="center" style="padding: 12px 5px">
+                          <a href="https://www.instagram.com/reel/DZ6saZ4v5sN/?igsh=Mnl3M2lxamE1NXd3" target="_blank"
+                            style="
+                                font-family:
+                                  &quot;Poppins&quot;, Helvetica, Arial,
+                                  sans-serif;
+                                font-size: 10px;
+                                color: #ffffff;
+                                text-decoration: none;
+                                font-weight: 400;
+                              ">
+                            CONNAUGHT ESTATE LUDHIANA — Your Ideal Destination
+                            <img src="./arrow.png" width="14" style="
+                                  vertical-align: middle;
+                                  margin-left: 6px;
+                                  margin-bottom: 2px;
+                                  border: 0;
+                                " alt="arrow" />
+                          </a>
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <!-- ROW:CONNAUGHT ESTATE RAJPURA | CONNAUGHT ESTATE RAJPURA -->
+          <tr>
+            <td style="padding: 20px 30px 40px 30px" class="mobile-padding">
+              <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                <tr>
+                  <!-- LEFT:video thumbnail + caption bar -->
+                  <td width="333" valign="middle" class="stack-column">
+                    <a href="https://www.instagram.com/p/DTHoBSQk0Pv/" target="_blank" style="
+                          text-decoration: none;
+                          display: block;
+                          position: relative;
+                          line-height: 0;
+                          font-size: 0;
+                        ">
+                      <img src="./rajpura.png" width="333" height="145" style="
+                            width: 100%;
+                            max-width: 333px;
+                            height: 145px;
+                            object-fit: cover;
+                            display: block;
+                            border: 0;
+                            border-top-left-radius: 15px;
+                            border-top-right-radius: 15px;
+                          " />
+                    </a>
+                    <table width="100%" border="0" cellspacing="0" cellpadding="0" bgcolor="#143a63" style="
+                          border-bottom-right-radius: 15px;
+                          border-bottom-left-radius: 15px;
+                        ">
+                      <tr>
+                        <td align="center" style="padding: 12px 10px">
+                          <a href="https://www.instagram.com/p/DTHoBSQk0Pv/" target="_blank" style="
+                                font-family:
+                                  &quot;Poppins&quot;, Helvetica, Arial,
+                                  sans-serif;
+                                font-size: 10px;
+                                color: #ffffff;
+                                text-decoration: none;
+                                font-weight: 400;
+                              ">
+                            CONNAUGHT ESTATE RAJPURA — Your Ideal Destination
+                            <img src="./arrow.png" width="14" style="
+                                  vertical-align: middle;
+                                  margin-left: 6px;
+                                  margin-bottom: 2px;
+                                  border: 0;
+                                " alt="arrow" />
+                          </a>
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                  <!-- RIGHT:logo + copy -->
+                  <td width="167" valign="middle" align="left" class="stack-column" style="padding-left: 80px">
+                    <img src="./cer.png" width="170" style="
+                          width: 100%;
+                          max-width: 170px;
+                          height: auto;
+                          display: block;
+                          border: 0;
+                          margin: 0 0 15px 0px;
+                        " />
+                    <h3 style="
+                          margin: 0 0 10px 0px;
+                          font-family:
+                            &quot;Poppins&quot;, Helvetica, Arial, sans-serif !important;
+                          font-size: 15px;
+                          font-weight: 600;
+                          align-items: center;
+                          letter-spacing: 0.5px;
+                          color: #143a63;
+                        ">
+                      CONNAUGHT ESTATE
+                    </h3>
+                    <p style="
+                          margin: 0 0 10px 22px;
+                          font-family:
+                            &quot;Poppins&quot;, Helvetica, Arial, sans-serif;
+                          font-size: 12px;
+                          color: #555555;
+                          font-weight: 500;
+                        ">
+                      Rajpura &bull;40+ Acres
+                    </p>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <!-- ROW:CONNAUGHT ESTATE PANIPAT | CONNAUGHT ESTATE PANIPAT -->
+          <tr>
+            <td style="padding: 20px 40px 50px 40px" class="mobile-padding">
+              <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                <tr>
+                  <td width="48%" valign="top" align="center" class="stack-column">
+                    <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                      <tr>
+                        <td height="120" valign="bottom" align="center" style="padding-bottom: 15px">
+                          <img src="./cep.png" width="140" style="
                                 width: 100%;
                                 max-width: 157px;
                                 height: auto;
                                 display: block;
                                 border: 0;
                                 margin: 0 auto;
-                              "
-                            />
-                          </td>
-                        </tr>
-                      </table>
-                      <h3
-                        style="
+                              " />
+                        </td>
+                      </tr>
+                    </table>
+                    <h3 style="
                           margin: 0 0 10px 0;
                           font-family:
                             &quot;Poppins&quot;, Helvetica, Arial, sans-serif !important;
@@ -894,132 +818,39 @@
                           font-weight: 600;
                           letter-spacing: 0.5px;
                           color: #143a63;
-                        "
-                      >
-                        CONNAUGHT ESTATE
-                      </h3>
-                      <p
-                        style="
+                        ">
+                      CONNAUGHT ESTATE
+                    </h3>
+                    <p style="
                           margin: 0;
                           font-family:
                             &quot;Poppins&quot;, Helvetica, Arial, sans-serif;
                           font-size: 11px;
                           color: #555555;
                           font-weight: 500;
-                        "
-                      >
-                        Ludhiana &bull; 150+ Acres
-                      </p>
-                    </td>
+                        ">
+                      Panipat &bull;102+ Acres
+                    </p>
+                  </td>
 
-                    <td width="4%">&nbsp;</td>
+                  <td width="4%">&nbsp;</td>
 
-                    <td
-                      width="48%"
-                      valign="top"
-                      align="center"
-                      class="stack-column"
-                    >
-                      <table
-                        width="100%"
-                        border="0"
-                        cellspacing="0"
-                        cellpadding="0"
-                      >
-                        <tr>
-                          <td
-                            height="140"
-                            valign="bottom"
-                            align="center"
-                            style="padding-bottom: 15px"
-                          >
-                            <img
-                              src="./cer.png"
-                              width="220"
-                              style="
-                                width: 100%;
-                                max-width: 220px;
-                                height: auto;
-                                display: block;
-                                border: 0;
-                                margin: 0 auto;
-                              "
-                            />
-                          </td>
-                        </tr>
-                      </table>
-                      <h3
-                        style="
-                          margin: 0 0 10px 0;
-                          font-family:
-                            &quot;Poppins&quot;, Helvetica, Arial, sans-serif !important;
-                          font-size: 14px;
-                          font-weight: 600;
-                          letter-spacing: 0.5px;
-                          color: #143a63;
-                        "
-                      >
-                        CONNAUGHT ESTATE
-                      </h3>
-                      <p
-                        style="
-                          margin: 0;
-                          font-family:
-                            &quot;Poppins&quot;, Helvetica, Arial, sans-serif;
-                          font-size: 11px;
-                          color: #555555;
-                          font-weight: 500;
-                        "
-                      >
-                        Rajpura &bull; 40+ Acres
-                      </p>
-                    </td>
-                  </tr>
-                </table>
-              </td>
-            </tr>
-
-            <!-- ROW: CONNAUGHT ESTATE RAJPURA | TDI CITY MOHALI -->
-            <tr>
-              <td style="padding: 20px 40px 50px 40px" class="mobile-padding">
-                <table width="100%" border="0" cellspacing="0" cellpadding="0">
-                  <tr>
-                    <td
-                      width="48%"
-                      valign="top"
-                      align="center"
-                      class="stack-column"
-                    >
-                      <table
-                        width="100%"
-                        border="0"
-                        cellspacing="0"
-                        cellpadding="0"
-                      >
-                        <tr>
-                          <td
-                            height="120"
-                            valign="bottom"
-                            align="center"
-                            style="padding-bottom: 15px"
-                          >
-                            <img
-                              src="./cep.png"
-                              width="140"
-                              style="
+                  <td width="48%" valign="top" align="center" class="stack-column">
+                    <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                      <tr>
+                        <td height="140" valign="bottom" align="center" style="padding-bottom: 15px">
+                          <img src="./tdi-city-mohali.png" width="157" style="
                                 width: 100%;
                                 max-width: 157px;
                                 height: auto;
                                 display: block;
                                 border: 0;
                                 margin: 0 auto;
-                              "
-                            />
-                          </td>
-                        </tr>
-                      </table>
-                      <h3
-                        style="
+                              " />
+                        </td>
+                      </tr>
+                    </table>
+                    <h3 style="
                           margin: 0 0 10px 0;
                           font-family:
                             &quot;Poppins&quot;, Helvetica, Arial, sans-serif !important;
@@ -1027,152 +858,55 @@
                           font-weight: 600;
                           letter-spacing: 0.5px;
                           color: #143a63;
-                        "
-                      >
-                        CONNAUGHT ESTATE
-                      </h3>
-                      <p
-                        style="
+                        ">
+                      TDI CITY
+                    </h3>
+                    <p style="
                           margin: 0;
                           font-family:
                             &quot;Poppins&quot;, Helvetica, Arial, sans-serif;
                           font-size: 11px;
                           color: #555555;
                           font-weight: 500;
-                        "
-                      >
-                        Panipat &bull; 102+ Acres
-                      </p>
-                    </td>
+                        ">
+                      Mohali &bull;200+ Acres
+                    </p>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+        </table>
 
-                    <td width="4%">&nbsp;</td>
+        <!-- CSR and community engagement -->
 
-                    <td
-                      width="48%"
-                      valign="top"
-                      align="center"
-                      class="stack-column"
-                    >
-                      <table
-                        width="100%"
-                        border="0"
-                        cellspacing="0"
-                        cellpadding="0"
-                      >
-                        <tr>
-                          <td
-                            height="140"
-                            valign="bottom"
-                            align="center"
-                            style="padding-bottom: 15px"
-                          >
-                            <img
-                              src="./tdi-city-mohali.png"
-                              width="157"
-                              style="
-                                width: 100%;
-                                max-width: 157px;
-                                height: auto;
-                                display: block;
-                                border: 0;
-                                margin: 0 auto;
-                              "
-                            />
-                          </td>
-                        </tr>
-                      </table>
-                      <h3
-                        style="
-                          margin: 0 0 10px 0;
-                          font-family:
-                            &quot;Poppins&quot;, Helvetica, Arial, sans-serif !important;
-                          font-size: 14px;
-                          font-weight: 600;
-                          letter-spacing: 0.5px;
-                          color: #143a63;
-                        "
-                      >
-                        TDI CITY
-                      </h3>
-                      <p
-                        style="
-                          margin: 0;
-                          font-family:
-                            &quot;Poppins&quot;, Helvetica, Arial, sans-serif;
-                          font-size: 11px;
-                          color: #555555;
-                          font-weight: 500;
-                        "
-                      >
-                        Mohali &bull; 200+ Acres
-                      </p>
-                    </td>
-                  </tr>
-                </table>
-              </td>
-            </tr>
-          </table>
-
-          <!-- CSR and community engagement -->
-
-          <table
-            width="100%"
-            border="0"
-            cellspacing="0"
-            cellpadding="0"
-            class="container"
-            align="center"
-            style="width: 640px; max-width: 640px; background-color: #0b2b4f"
-          >
-            <tr>
-              <td
-                align="center"
-                style="padding: 20px 10px 20px 10px"
-                class="mobile-padding"
-              >
-                <h2
-                  style="
+        <table width="100%" border="0" cellspacing="0" cellpadding="0" class="container" align="center"
+          style="width: 640px; max-width: 640px; background-color: #0b2b4f">
+          <tr>
+            <td align="center" style="padding: 20px 10px 20px 10px" class="mobile-padding">
+              <h2 style="
                     margin: 0 0 20px 0;
                     font-family: Georgia, serif;
                     font-size: 24px;
                     font-weight: 400;
                     color: #ffffff;
                     letter-spacing: 0.5px;
-                  "
-                >
-                  CSR &amp; Community Engagement
-                </h2>
+                  ">
+                CSR &amp;Community Engagement
+              </h2>
 
-                <table
-                  width="100%"
-                  border="0"
-                  cellspacing="0"
-                  cellpadding="0"
-                  align="center"
-                >
-                  <!-- ROW 1 -->
-                  <tr>
-                    <td
-                      width="25%"
-                      class="stack-column"
-                      align="center"
-                      valign="top"
-                      style="padding: 6px"
-                    >
-                      <img
-                        src="./covid-19.png"
-                        width="100%"
-                        alt=""
-                        style="
+              <table width="100%" border="0" cellspacing="0" cellpadding="0" align="center">
+                <!-- ROW 1 -->
+                <tr>
+                  <td width="25%" class="stack-column" align="center" valign="top" style="padding: 6px">
+                    <img src="./covid-19.png" width="100%" alt="" style="
                           width: 100%;
                           max-width: 100%;
                           height: auto;
                           display: block;
                           border: 0;
-                        "
-                      />
-                      <p
-                        style="
+                        " />
+                    <p style="
                           font-family: Arial, sans-serif;
                           margin: 8px 0 0 0;
                           font-size: 8px;
@@ -1180,32 +914,19 @@
                           font-weight: 400;
                           letter-spacing: 0.3px;
                           opacity: 0.9;
-                        "
-                      >
-                        Shot of Hope – Free COVID-19 Vaccination Drive
-                      </p>
-                    </td>
-                    <td
-                      width="25%"
-                      class="stack-column"
-                      align="center"
-                      valign="top"
-                      style="padding: 6px"
-                    >
-                      <img
-                        src="./checkup.png"
-                        width="100%"
-                        alt=""
-                        style="
+                        ">
+                      Shot of Hope – Free COVID-19 Vaccination Drive
+                    </p>
+                  </td>
+                  <td width="25%" class="stack-column" align="center" valign="top" style="padding: 6px">
+                    <img src="./checkup.png" width="100%" alt="" style="
                           width: 100%;
                           max-width: 100%;
                           height: auto;
                           display: block;
                           border: 0;
-                        "
-                      />
-                      <p
-                        style="
+                        " />
+                    <p style="
                           font-family: Arial, sans-serif;
                           margin: 8px 0 0 0;
                           font-size: 8px;
@@ -1213,32 +934,19 @@
                           font-weight: 400;
                           letter-spacing: 0.3px;
                           opacity: 0.9;
-                        "
-                      >
-                        All Is Well – Health Checkup Camp
-                      </p>
-                    </td>
-                    <td
-                      width="25%"
-                      class="stack-column"
-                      align="center"
-                      valign="top"
-                      style="padding: 6px"
-                    >
-                      <img
-                        src="./srimant.png"
-                        width="100%"
-                        alt=""
-                        style="
+                        ">
+                      All Is Well – Health Checkup Camp
+                    </p>
+                  </td>
+                  <td width="25%" class="stack-column" align="center" valign="top" style="padding: 6px">
+                    <img src="./srimant.png" width="100%" alt="" style="
                           width: 100%;
                           max-width: 100%;
                           height: auto;
                           display: block;
                           border: 0;
-                        "
-                      />
-                      <p
-                        style="
+                        " />
+                    <p style="
                           font-family: Arial, sans-serif;
                           margin: 8px 0 0 0;
                           font-size: 8px;
@@ -1246,33 +954,20 @@
                           font-weight: 400;
                           letter-spacing: 0.3px;
                           opacity: 0.9;
-                        "
-                      >
-                        Srimant Narain Dass Taneja Charitable Dispensary – Free
-                        Medical Consultations
-                      </p>
-                    </td>
-                    <td
-                      width="25%"
-                      class="stack-column"
-                      align="center"
-                      valign="top"
-                      style="padding: 6px"
-                    >
-                      <img
-                        src="./flood-relief.png"
-                        width="100%"
-                        alt=""
-                        style="
+                        ">
+                      Srimant Narain Dass Taneja Charitable Dispensary – Free
+                      Medical Consultations
+                    </p>
+                  </td>
+                  <td width="25%" class="stack-column" align="center" valign="top" style="padding: 6px">
+                    <img src="./flood-relief.png" width="100%" alt="" style="
                           width: 100%;
                           max-width: 100%;
                           height: auto;
                           display: block;
                           border: 0;
-                        "
-                      />
-                      <p
-                        style="
+                        " />
+                    <p style="
                           font-family: Arial, sans-serif;
                           margin: 8px 0 0 0;
                           font-size: 8px;
@@ -1280,37 +975,24 @@
                           font-weight: 400;
                           letter-spacing: 0.3px;
                           opacity: 0.9;
-                        "
-                      >
-                        &#8377;51 Lakh Contribution to Punjab CM Flood Relief
-                        Fund
-                      </p>
-                    </td>
-                  </tr>
+                        ">
+                      &#8377;51 Lakh Contribution to Punjab CM Flood Relief
+                      Fund
+                    </p>
+                  </td>
+                </tr>
 
-                  <!-- ROW 2 -->
-                  <tr>
-                    <td
-                      width="25%"
-                      class="stack-column"
-                      align="center"
-                      valign="top"
-                      style="padding: 20px 6px 6px 6px"
-                    >
-                      <img
-                        src="./smile.png"
-                        width="100%"
-                        alt=""
-                        style="
+                <!-- ROW 2 -->
+                <tr>
+                  <td width="25%" class="stack-column" align="center" valign="top" style="padding: 20px 6px 6px 6px">
+                    <img src="./smile.png" width="100%" alt="" style="
                           width: 100%;
                           max-width: 100%;
                           height: auto;
                           display: block;
                           border: 0;
-                        "
-                      />
-                      <p
-                        style="
+                        " />
+                    <p style="
                           font-family: Arial, sans-serif;
                           margin: 8px 0 0 0;
                           font-size: 8px;
@@ -1318,32 +1000,19 @@
                           font-weight: 400;
                           letter-spacing: 0.3px;
                           opacity: 0.9;
-                        "
-                      >
-                        Smiles &amp; Skylines – Blood Donation Camp
-                      </p>
-                    </td>
-                    <td
-                      width="25%"
-                      class="stack-column"
-                      align="center"
-                      valign="top"
-                      style="padding: 20px 6px 6px 6px"
-                    >
-                      <img
-                        src="./initiative.png"
-                        width="100%"
-                        alt=""
-                        style="
+                        ">
+                      Smiles &amp;Skylines – Blood Donation Camp
+                    </p>
+                  </td>
+                  <td width="25%" class="stack-column" align="center" valign="top" style="padding: 20px 6px 6px 6px">
+                    <img src="./initiative.png" width="100%" alt="" style="
                           width: 100%;
                           max-width: 100%;
                           height: auto;
                           display: block;
                           border: 0;
-                        "
-                      />
-                      <p
-                        style="
+                        " />
+                    <p style="
                           font-family: Arial, sans-serif;
                           margin: 8px 0 0 0;
                           font-size: 8px;
@@ -1351,32 +1020,19 @@
                           font-weight: 400;
                           letter-spacing: 0.3px;
                           opacity: 0.9;
-                        "
-                      >
-                        TDI &times; RoundGlass Flood Relief Initiative
-                      </p>
-                    </td>
-                    <td
-                      width="25%"
-                      class="stack-column"
-                      align="center"
-                      valign="top"
-                      style="padding: 20px 6px 6px 6px"
-                    >
-                      <img
-                        src="./mandir.png"
-                        width="100%"
-                        alt=""
-                        style="
+                        ">
+                      TDI &times;RoundGlass Flood Relief Initiative
+                    </p>
+                  </td>
+                  <td width="25%" class="stack-column" align="center" valign="top" style="padding: 20px 6px 6px 6px">
+                    <img src="./mandir.png" width="100%" alt="" style="
                           width: 100%;
                           max-width: 100%;
                           height: auto;
                           display: block;
                           border: 0;
-                        "
-                      />
-                      <p
-                        style="
+                        " />
+                    <p style="
                           font-family: Arial, sans-serif;
                           margin: 8px 0 0 0;
                           font-size: 8px;
@@ -1384,33 +1040,20 @@
                           font-weight: 400;
                           letter-spacing: 0.3px;
                           opacity: 0.9;
-                        "
-                      >
-                        Supporting Construction of Atithi Nivas at Mahakal
-                        Temple, Ujjain
-                      </p>
-                    </td>
-                    <td
-                      width="25%"
-                      class="stack-column"
-                      align="center"
-                      valign="top"
-                      style="padding: 20px 6px 6px 6px"
-                    >
-                      <img
-                        src="./building.png"
-                        width="100%"
-                        alt=""
-                        style="
+                        ">
+                      Supporting Construction of Atithi Nivas at Mahakal
+                      Temple, Ujjain
+                    </p>
+                  </td>
+                  <td width="25%" class="stack-column" align="center" valign="top" style="padding: 20px 6px 6px 6px">
+                    <img src="./building.png" width="100%" alt="" style="
                           width: 100%;
                           max-width: 100%;
                           height: auto;
                           display: block;
                           border: 0;
-                        "
-                      />
-                      <p
-                        style="
+                        " />
+                    <p style="
                           font-family: Arial, sans-serif;
                           margin: 8px 0 0 0;
                           font-size: 8px;
@@ -1418,331 +1061,181 @@
                           font-weight: 400;
                           letter-spacing: 0.3px;
                           opacity: 0.9;
-                        "
-                      >
-                        Building communities, beyond infrastructure
-                      </p>
-                    </td>
-                  </tr>
-                </table>
-              </td>
-            </tr>
-          </table>
+                        ">
+                      Building communities, beyond infrastructure
+                    </p>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+        </table>
 
-          <!-- Brands on board -->
+        <!-- Brands on board -->
 
-          <table
-            width="100%"
-            border="0"
-            cellspacing="0"
-            cellpadding="0"
-            class="container"
-            align="center"
-            style="width: 640px; max-width: 640px; background-color: #ffffff"
-          >
-            <!-- Heading -->
-            <tr>
-              <td align="center" style="padding: 15px 10px 0px 10px">
-                <h2
-                  style="
+        <table width="100%" border="0" cellspacing="0" cellpadding="0" class="container" align="center"
+          style="width: 640px; max-width: 640px; background-color: #ffffff">
+          <!-- Heading -->
+          <tr>
+            <td align="center" style="padding: 15px 10px 0px 10px">
+              <h2 style="
                     font-family: Georgia, serif;
                     font-size: 20px;
                     font-weight: 200;
                     color: #2d3565;
                     line-height: 30px;
                     letter-spacing: 0.17px;
-                  "
-                >
-                  Brands On Board
-                </h2>
-              </td>
-            </tr>
+                  ">
+                Brands On Board
+              </h2>
+            </td>
+          </tr>
 
-            <!-- LOGO GRID -->
-            <tr>
-              <td align="center" style="padding: 10px 15px">
-                <table
-                  width="100%"
-                  border="0"
-                  cellspacing="0"
-                  cellpadding="0"
-                  style="width: 100%"
-                >
-                  <tbody>
-                    <!-- ROW 1 -->
-                    <tr>
-                      <td
-                        width="16.66%"
-                        valign="middle"
-                        align="center"
-                        style="padding: 12px 6px"
-                      >
-                        <img
-                          src="./tim.png"
-                          width="95"
-                          alt="Tim Hortons"
-                          style="
+          <!-- LOGO GRID -->
+          <tr>
+            <td align="center" style="padding: 10px 15px">
+              <table width="100%" border="0" cellspacing="0" cellpadding="0" style="width: 100%">
+                <tbody>
+                  <!-- ROW 1 -->
+                  <tr>
+                    <td width="16.66%" valign="middle" align="center" style="padding: 12px 6px">
+                      <img src="./tim.png" width="95" alt="Tim Hortons" style="
                             max-width: 95px;
                             width: 100%;
                             height: auto;
                             display: block;
                             border: 0;
                             margin: 0 auto;
-                          "
-                        />
-                      </td>
-                      <td
-                        width="16.66%"
-                        valign="middle"
-                        align="center"
-                        style="padding: 12px 6px"
-                      >
-                        <img
-                          src="./sb.png"
-                          width="55"
-                          alt="Starbucks"
-                          style="
+                          " />
+                    </td>
+                    <td width="16.66%" valign="middle" align="center" style="padding: 12px 6px">
+                      <img src="./sb.png" width="55" alt="Starbucks" style="
                             max-width: 55px;
                             width: 100%;
                             height: auto;
                             display: block;
                             border: 0;
                             margin: 0 auto;
-                          "
-                        />
-                      </td>
-                      <td
-                        width="16.66%"
-                        valign="middle"
-                        align="center"
-                        style="padding: 12px 6px"
-                      >
-                        <img
-                          src="./karim.png"
-                          width="85"
-                          alt="Karim's"
-                          style="
+                          " />
+                    </td>
+                    <td width="16.66%" valign="middle" align="center" style="padding: 12px 6px">
+                      <img src="./karim.png" width="85" alt="Karim's" style="
                             max-width: 85px;
                             width: 100%;
                             height: auto;
                             display: block;
                             border: 0;
                             margin: 0 auto;
-                          "
-                        />
-                      </td>
-                      <td
-                        width="16.66%"
-                        valign="middle"
-                        align="center"
-                        style="padding: 12px 6px"
-                      >
-                        <img
-                          src="./croma.png"
-                          width="100"
-                          alt="Croma"
-                          style="
+                          " />
+                    </td>
+                    <td width="16.66%" valign="middle" align="center" style="padding: 12px 6px">
+                      <img src="./croma.png" width="100" alt="Croma" style="
                             max-width: 100px;
                             width: 100%;
                             height: auto;
                             display: block;
                             border: 0;
                             margin: 0 auto;
-                          "
-                        />
-                      </td>
-                      <td
-                        width="16.66%"
-                        valign="middle"
-                        align="center"
-                        style="padding: 12px 6px"
-                      >
-                        <img
-                          src="./subway.png"
-                          width="100"
-                          alt="Subway"
-                          style="
+                          " />
+                    </td>
+                    <td width="16.66%" valign="middle" align="center" style="padding: 12px 6px">
+                      <img src="./subway.png" width="100" alt="Subway" style="
                             max-width: 100px;
                             width: 100%;
                             height: auto;
                             display: block;
                             border: 0;
                             margin: 0 auto;
-                          "
-                        />
-                      </td>
-                      <td
-                        width="16.66%"
-                        valign="middle"
-                        align="center"
-                        style="padding: 12px 6px"
-                      >
-                        <img
-                          src="./nandos.png"
-                          width="100"
-                          alt="Nando's"
-                          style="
+                          " />
+                    </td>
+                    <td width="16.66%" valign="middle" align="center" style="padding: 12px 6px">
+                      <img src="./nandos.png" width="100" alt="Nando's" style="
                             max-width: 100px;
                             width: 100%;
                             height: auto;
                             display: block;
                             border: 0;
                             margin: 0 auto;
-                          "
-                        />
-                      </td>
-                    </tr>
-                    <!-- ROW 2 -->
-                    <tr>
-                      <td
-                        width="16.66%"
-                        valign="middle"
-                        align="center"
-                        style="padding: 12px 6px"
-                      >
-                        <img
-                          src="./keven.png"
-                          width="85"
-                          alt="Keventers"
-                          style="
+                          " />
+                    </td>
+                  </tr>
+                  <!-- ROW 2 -->
+                  <tr>
+                    <td width="16.66%" valign="middle" align="center" style="padding: 12px 6px">
+                      <img src="./keven.png" width="85" alt="Keventers" style="
                             max-width: 85px;
                             width: 100%;
                             height: auto;
                             display: block;
                             border: 0;
                             margin: 0 auto;
-                          "
-                        />
-                      </td>
-                      <td
-                        width="16.66%"
-                        valign="middle"
-                        align="center"
-                        style="padding: 12px 6px"
-                      >
-                        <img
-                          src="./nexa.png"
-                          width="75"
-                          alt="Nexa"
-                          style="
+                          " />
+                    </td>
+                    <td width="16.66%" valign="middle" align="center" style="padding: 12px 6px">
+                      <img src="./nexa.png" width="75" alt="Nexa" style="
                             max-width: 75px;
                             width: 100%;
                             height: auto;
                             display: block;
                             border: 0;
                             margin: 0 auto;
-                          "
-                        />
-                      </td>
-                      <td
-                        width="16.66%"
-                        valign="middle"
-                        align="center"
-                        style="padding: 12px 6px"
-                      >
-                        <img
-                          src="./beer.png"
-                          width="55"
-                          alt="The Beer Cafe"
-                          style="
+                          " />
+                    </td>
+                    <td width="16.66%" valign="middle" align="center" style="padding: 12px 6px">
+                      <img src="./beer.png" width="55" alt="The Beer Cafe" style="
                             max-width: 55px;
                             width: 100%;
                             height: auto;
                             display: block;
                             border: 0;
                             margin: 0 auto;
-                          "
-                        />
-                      </td>
-                      <td
-                        width="16.66%"
-                        valign="middle"
-                        align="center"
-                        style="padding: 12px 6px"
-                      >
-                        <img
-                          src="./kfc.png"
-                          width="90"
-                          alt="KFC"
-                          style="
+                          " />
+                    </td>
+                    <td width="16.66%" valign="middle" align="center" style="padding: 12px 6px">
+                      <img src="./kfc.png" width="90" alt="KFC" style="
                             max-width: 90px;
                             width: 100%;
                             height: auto;
                             display: block;
                             border: 0;
                             margin: 0 auto;
-                          "
-                        />
-                      </td>
-                      <td
-                        width="16.66%"
-                        valign="middle"
-                        align="center"
-                        style="padding: 12px 6px"
-                      >
-                        <img
-                          src="./inox.png"
-                          width="65"
-                          alt="Inox"
-                          style="
+                          " />
+                    </td>
+                    <td width="16.66%" valign="middle" align="center" style="padding: 12px 6px">
+                      <img src="./inox.png" width="65" alt="Inox" style="
                             max-width: 65px;
                             width: 100%;
                             height: auto;
                             display: block;
                             border: 0;
                             margin: 0 auto;
-                          "
-                        />
-                      </td>
-                      <td
-                        width="16.66%"
-                        valign="middle"
-                        align="center"
-                        style="padding: 12px 6px"
-                      >
-                        <img
-                          src="./bikaner.png"
-                          width="90"
-                          alt="Bikanervala"
-                          style="
+                          " />
+                    </td>
+                    <td width="16.66%" valign="middle" align="center" style="padding: 12px 6px">
+                      <img src="./bikaner.png" width="90" alt="Bikanervala" style="
                             max-width: 90px;
                             width: 100%;
                             height: auto;
                             display: block;
                             border: 0;
                             margin: 0 auto;
-                          "
-                        />
-                      </td>
-                    </tr>
-                  </tbody>
-                </table>
-              </td>
-            </tr>
-          </table>
+                          " />
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </td>
+          </tr>
+        </table>
 
-          <!-- Footer Section -->
-          <table
-            width="100%"
-            border="0"
-            cellspacing="0"
-            cellpadding="0"
-            class="container"
-            align="center"
-            style="width: 640px; max-width: 640px; background-color: #ffffff"
-          >
-            <tr>
-              <td align="center" style="padding: 40px 0px 0px 0">
-                <!-- Main Container -->
-                <table
-                  width="640"
-                  border="0"
-                  cellspacing="0"
-                  cellpadding="0"
-                  align="center"
-                  background="./hero-bg.png"
-                  bgcolor="#0c2f57"
-                  style="
+        <!-- Footer Section -->
+        <table width="100%" border="0" cellspacing="0" cellpadding="0" class="container" align="center"
+          style="width: 640px; max-width: 640px; background-color: #ffffff">
+          <tr>
+            <td align="center" style="padding: 40px 0px 0px 0">
+              <!-- Main Container -->
+              <table width="640" border="0" cellspacing="0" cellpadding="0" align="center" background="./hero-bg.png"
+                bgcolor="#0c2f57" style="
                     background-color: #0c2f57;
                     background-image:
                       linear-gradient(
@@ -1753,13 +1246,11 @@
                     background-size: cover;
                     background-position: center bottom;
                     font-family: Arial, Helvetica, sans-serif;
-                  "
-                >
-                  <!-- Top Tagline -->
-                  <tr>
-                    <td align="center">
-                      <h6
-                        style="
+                  ">
+                <!-- Top Tagline -->
+                <tr>
+                  <td align="center">
+                    <h6 style="
                           margin: 0;
                           padding: 40px 0px 20px 0px;
                           color: rgba(229, 229, 229, 0.2);
@@ -1769,118 +1260,66 @@
                           font-weight: 400;
                           letter-spacing: 1.8px;
                           line-height: 100%;
-                        "
-                      >
-                        Built with foresight. Delivered with precision.
-                      </h6>
-                    </td>
-                  </tr>
+                        ">
+                      Built with foresight. Delivered with precision.
+                    </h6>
+                  </td>
+                </tr>
 
-                  <!-- Two Column Section -->
-                  <tr>
-                    <td style="padding: 20px">
-                      <table
-                        width="100%"
-                        border="0"
-                        cellspacing="0"
-                        cellpadding="0"
-                      >
-                        <tr>
-                          <!-- LEFT COLUMN -->
-                          <td
-                            width="60%"
-                            valign="top"
-                            align="left"
-                            style="color: #ffffff"
-                          >
-                            <table border="0" cellspacing="0" cellpadding="0">
-                              <tr>
-                                <td style="vertical-align: middle">
-                                  <!-- Logo -->
-                                  <img
-                                    src="./footer-logo.png"
-                                    width="181"
-                                    alt="TDI Infratech"
-                                    style="
+                <!-- Two Column Section -->
+                <tr>
+                  <td style="padding: 20px">
+                    <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                      <tr>
+                        <!-- LEFT COLUMN -->
+                        <td width="60%" valign="top" align="left" style="color: #ffffff">
+                          <table border="0" cellspacing="0" cellpadding="0">
+                            <tr>
+                              <td style="vertical-align: middle">
+                                <!-- Logo -->
+                                <img src="./footer-logo.png" width="181" alt="TDI Infratech" style="
                                       display: block;
                                       margin: 0px 14px 12px 0px;
-                                    "
-                                  />
-                                </td>
-                              </tr>
-                            </table>
-                            <!-- Social Icons Row -->
-                            <table border="0" cellspacing="0" cellpadding="0">
-                              <tr>
-                                <td style="padding-right: 12px">
-                                  <a
-                                    href="https://www.instagram.com/tdi_infratech/"
-                                    target="_blank"
-                                    ><img
-                                      src="./instagram.png"
-                                      width="23"
-                                      alt="Instagram"
-                                      style="display: block"
-                                  /></a>
-                                </td>
-                                <td style="padding-right: 12px">
-                                  <a
-                                    href="https://www.facebook.com/TDIInfratechLimited/"
-                                    target="_blank"
-                                    ><img
-                                      src="./facebook.png"
-                                      width="23"
-                                      alt="Facebook"
-                                      style="display: block"
-                                  /></a>
-                                </td>
-                                <td style="padding-right: 12px">
-                                  <a
-                                    href="https://www.linkedin.com/company/tdi-group/"
-                                    target="_blank"
-                                    ><img
-                                      src="./linkedin.png"
-                                      width="23"
-                                      alt="LinkedIn"
-                                      style="display: block"
-                                  /></a>
-                                </td>
-                                <td>
-                                  <a
-                                    href="https://www.youtube.com/@tdiInfratech"
-                                    target="_blank"
-                                    ><img
-                                      src="./youtube.png"
-                                      width="23"
-                                      alt="YouTube"
-                                      style="display: block"
-                                  /></a>
-                                </td>
-                              </tr>
-                            </table>
-                          </td>
+                                    " />
+                              </td>
+                            </tr>
+                          </table>
+                          <!-- Social Icons Row -->
+                          <table border="0" cellspacing="0" cellpadding="0">
+                            <tr>
+                              <td style="padding-right: 12px">
+                                <a href="https://www.instagram.com/tdi_infratech/" target="_blank"><img
+                                    src="./instagram.png" width="23" alt="Instagram" style="display: block" /></a>
+                              </td>
+                              <td style="padding-right: 12px">
+                                <a href="https://www.facebook.com/TDIInfratechLimited/" target="_blank"><img
+                                    src="./facebook.png" width="23" alt="Facebook" style="display: block" /></a>
+                              </td>
+                              <td style="padding-right: 12px">
+                                <a href="https://www.linkedin.com/company/tdi-group/" target="_blank"><img
+                                    src="./linkedin.png" width="23" alt="LinkedIn" style="display: block" /></a>
+                              </td>
+                              <td>
+                                <a href="https://www.youtube.com/@tdiInfratech" target="_blank"><img src="./youtube.png"
+                                    width="23" alt="YouTube" style="display: block" /></a>
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
 
-                          <!-- RIGHT COLUMN -->
-                          <td
-                            width="40%"
-                            valign="center"
-                            align="left"
-                            style="color: #ffffff"
-                          >
-                            <div
-                              style="
+                        <!-- RIGHT COLUMN -->
+                        <td width="40%" valign="center" align="left" style="color: #ffffff">
+                          <div style="
                                 font-family:
                                   &quot;Alice&quot;, Georgia, serif !important;
                                 font-size: 18px;
                                 font-weight: 400;
                                 margin-bottom: 12px;
                                 letter-spacing: 0.5px;
-                              "
-                            >
-                              Address:
-                            </div>
-                            <div
-                              style="
+                              ">
+                            Address:
+                          </div>
+                          <div style="
                                 font-family:
                                   &quot;Poppins&quot;, Helvetica, Arial,
                                   sans-serif !important;
@@ -1889,25 +1328,25 @@
                                 color: #ffffff;
                                 line-height: 23.45px;
                                 letter-spacing: 0.06px;
-                              "
-                            >
-                              Mahindra Towers, 2A, Bhikaji Cama Place, 2nd
-                              floor, New Delhi - 110066
-                            </div>
-                          </td>
-                        </tr>
-                      </table>
-                    </td>
-                  </tr>
-                </table>
-                <!-- End Main Container -->
-              </td>
-            </tr>
-          </table>
-          <!-- End Footer Section -->
-        </td>
-      </tr>
-    </table>
-    <!-- END CONTAINER -->
-  </body>
+                              ">
+                            Mahindra Towers, 2A, Bhikaji Cama Place, 2nd
+                            floor, New Delhi - 110066
+                          </div>
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+              </table>
+              <!-- End Main Container -->
+            </td>
+          </tr>
+        </table>
+        <!-- End Footer Section -->
+      </td>
+    </tr>
+  </table>
+  <!-- END CONTAINER -->
+</body>
+
 </html>
